@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="icon" href="/icons/icon-192x192.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1>Password Manager</h1>
+    <div id="app">
+        <div id="password-list"></div>
+        <form id="add-password-form">
+            <input type="text" id="login" placeholder="Login" required>
+            <input type="url" id="url" placeholder="URL" required>
+            <input type="text" id="password" placeholder="Password" required>
+            
+            <div class="slider-container">
+                <label for="complexity">Complexity:</label>
+                <input type="range" id="complexity" min="1" max="3" value="2">
+                <span id="complexity-label">Medium</span>
+            </div>
+            
+            <button type="button" id="generate-password">Generate</button>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
